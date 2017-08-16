@@ -62,8 +62,9 @@ const getOrderById = (id) => {
 }
 
 const App = () => {
-  console.log(getMostExpensiveProduct())
+  console.log("The most expensive product is worth:", getMostExpensiveProduct())
   console.log(getOrderInfo())
+  console.log(getActiveUsers())
   return (
     <div>
       hello world
@@ -78,9 +79,8 @@ const getActiveUsers = (id) => {
     if(u.accountActive === true){
       activeUserArray.push(u)
     }
-  return activeUserArray
   })
-  console.log(activeUserArray)
+  return activeUserArray
 }
 
 // Works like a charm
